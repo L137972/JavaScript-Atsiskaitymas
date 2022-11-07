@@ -19,3 +19,27 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+/*
+calculate the sum of users age by using the reduce method
+then divide the sum by the amount of users in the array
+*/
+function getUserAverageAge(users) {
+  return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+}
+
+console.log(getUserAverageAge(users));
+
+
+/*Create new array
+filter through using foreach method
+add only the user names to the newly created array */
+function getUsersNames(users) {
+  let usersNames = [];
+  users.forEach(user => {
+    usersNames.push(user.name);
+  });
+  return usersNames;
+}
+
+console.log(getUsersNames(users));
