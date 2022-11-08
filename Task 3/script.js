@@ -15,15 +15,15 @@ const ENDPOINT = 'https://api.github.com/users';
 const output = document.getElementById("output");
 
 
-document.getElementById("btn").addEventListener("click", () => 
+document.getElementById("btn").addEventListener("click", () =>
     fetch(ENDPOINT)
         .then(response => response.json())
         .then(json => {
             document.getElementById("message").hidden = true
-            for(i = 0; i < json.length; i++) {
+            for (i = 0; i < json.length; i++) {
                 const userLogin = document.createElement("h3");
                 userLogin.textContent = json[i].login;
-                
+
                 const avatarURL = document.createElement("a");
                 avatarURL.href = json[i].avatar_url;
                 avatarURL.textContent = json[i].avatar_url;
