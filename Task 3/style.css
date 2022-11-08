@@ -55,7 +55,30 @@
 .output-cointainer #output {
   width: 80%;
   margin-top: 25px;
-  padding: 30px;
+  padding: 1%;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  width: 100%;
+  padding: 1%;
+  margin: 1%;
+  background-color: rgb(222, 248, 238);
+  line-height: 180%;
+  flex: 1;
+}
+
+@media only screen and (min-width: 800px) {
+  #output {
+    flex: 50%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #output {
+    flex: 100%;
+  }
 }
