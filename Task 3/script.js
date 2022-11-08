@@ -20,7 +20,7 @@ document.getElementById("btn").addEventListener("click", () =>
         .then(response => response.json())
         .then(json => {
             document.getElementById("message").hidden = true
-            for(i = 0; i <= json.length; i++) {
+            for(i = 0; i < json.length; i++) {
                 const userLogin = document.createElement("h3");
                 userLogin.textContent = json[i].login;
                 

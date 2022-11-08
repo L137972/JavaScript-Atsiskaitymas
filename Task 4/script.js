@@ -9,3 +9,25 @@ būti stilizuota su CSS ir būti responsive;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'cars.json';
+
+fetch(ENDPOINT)
+    .then((response) => response.json())
+    .then((json) => {
+        console.log(json)
+            for(i = 0; i < json.length; i++) {
+                const carBrand = document.createElement("h3");
+                carBrand.textContent = json[i].brand;
+                
+                const carModels = document.createElement("p");
+                for(x = 0; x < json[i].models.length; x++) {
+                    x + 1 != json[i].models.length ? carModels.textContent += json[i].models[x] + ", " : carModels.textContent += json[i].models[x];
+                }
+                
+                const carCard = document.createElement("div");
+                carCard.classList.add("card");
+
+                carCard.append(carBrand, carModels);
+
+                document.getElementById("output").append(carCard);
+            }
+    });
