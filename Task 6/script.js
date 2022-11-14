@@ -6,7 +6,6 @@ Parašykite funckijas, kurios atliks nurodytas užduotis:
 atveju grąžins visų "users" amžiaus vidurkį kaip skaičių.
 2. funkcija "getUsersNames" -  kaip argumentą priims masyvą ir duoto masyvo 
 atveju grąžins visų "users" vardus naujame masyve pvz., ['John Smith', 'Ann Smith'..].
-
 -------------------------------------------------------------------------- */
 
 const users = [

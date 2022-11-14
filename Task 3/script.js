@@ -9,7 +9,6 @@ Paspaudus mygtuką "Show users":
 
 Pastaba: Sukurta kortelė, kurioje yra pateikiama vartotojo informacija, turi 
 būti stilizuota su CSS ir būti responsive;
-
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'https://api.github.com/users';

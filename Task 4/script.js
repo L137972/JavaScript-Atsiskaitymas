@@ -6,7 +6,6 @@ nurodomas gamintojas ir jo pagaminti modeliai.
 
 Pastaba: Sukurta kortelė, kurioje yra informacija apie automobilį (brand), turi 
 būti stilizuota su CSS ir būti responsive;
-
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'cars.json';
