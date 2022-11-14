@@ -8,6 +8,7 @@ budget: number
 
 Metodas: 
 wasExpensive() - jeigu filmo "budget" yra daugiau nei 100 000 000 mln USD, tada grąžins true, kitu atveju false. 
+
 ------------------------------------------------------------------------------------------------------ */
 
 class Movie {

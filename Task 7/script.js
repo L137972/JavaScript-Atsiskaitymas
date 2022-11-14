@@ -3,6 +3,7 @@ Turimas "audi" objektas.
 
 Parašykite funkciją "showObjectKeys", kuri kaip argumentą priims objektą 
 ir grąžins visus jo "key" masyve.
+
 -------------------------------------------------------------------------- */
 const audi = {
   make: 'audi',

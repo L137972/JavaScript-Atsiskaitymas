@@ -6,6 +6,7 @@ Parašykite funckijas, kurios atliks nurodytas užduotis:
 atveju grąžins "users", kurie turi augintinį.
 2. funkcija "filterAdults" - kaip argumentą priims masyvą ir duoto masyvo 
 atveju grąžins masyvą su "users", kurie yra pilnamečiai.
+
 -------------------------------------------------------------------------- */
 
 const users = [
